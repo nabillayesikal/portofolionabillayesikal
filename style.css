@@ -1,0 +1,75 @@
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Main content container */
+.w3-main {
+  transition: margin-left 0.4s;
+}
+
+/* Sidebar styles */
+#mySidebar {
+  display: block;
+  transition: display 0.3s;
+}
+
+/* Overlay styles */
+#myOverlay {
+  transition: display 0.3s;
+}
+
+/* Hover effects for portfolio images */
+.w3-hover-opacity:hover {
+  opacity: 0.7 !important;
+}
+
+/* Pricing table hover effect */
+.w3-hover-opacity-off:hover {
+  opacity: 1 !important;
+}
+
+/* Button hover effects */
+.w3-button.w3-hover-black:hover {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+/* Social media icons hover */
+.w3-hover-opacity {
+  cursor: pointer;
+}
+
+/* Pagination styles */
+.pagination-page {
+  cursor: pointer;
+}
+
+.pagination-page.active {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.pagination-prev, .pagination-next {
+  cursor: pointer;
+}
+
+/* Portfolio page transition */
+.portfolio-page {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Media query for responsive design */
+@media only screen and (max-width: 993px) {
+  #mySidebar {
+    display: none;
+  }
+  
+  .w3-main {
+    margin-left: 0 !important;
+  }
+}
